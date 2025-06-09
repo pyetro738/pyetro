@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flash Card Flash</title>
+</head>
+<body>
+    <main>
+        <section id="container">
+            <!-- 4 Cartões estáticos sobre futebol -->
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Copa do Mundo</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Quem é o maior artilheiro da história da Copa do Mundo?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                    </p>Resposta: Miroslav Klose, com 16 gols.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Campeonato</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Qual clube brasileiro tem mais títulos do Campeonato Brasileiro?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>Resposta: O Palmeiras, com 11 títulos</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Fama</h3>
+                    <div class="cartao__conteudo__pergunta">
+                    <p>Qual jogador ficou famoso por fazer um gol de "mão de Deus" na Copa de 1986?</p>
+            </div>
+                <div class="cartao__conteudo__resposta">
+            <p>Resposta: Diego Maradona, pela seleção da Argentina</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>copa do mundo</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Em que ano o Brasil ganhou sua última Copa do Mundo?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                    </p>Resposta: 2002, no Japão e Coreia do Sul.<p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
+    </footer>
+    <script src="app.js"></script>
+    <script>
+        // Adiciona o evento de clique para virar os cartões já existentes no HTML
+        document.querySelectorAll('.cartao').forEach(cartao => {
+            cartao.addEventListener('click', viraCartao);
+        });
+    </script>
+</body>
+</html>
