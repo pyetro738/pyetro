@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flash Card Flash</title>
+</head>
+<body>
+    <main>
+        <section id="container">
+            <!-- 4 Cartões estáticos sobre Mamonas Assassinas -->
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Velocidade</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Qual é a maior velocidade já alcançada pelo flash?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>3.897.302.954.000.000.000.000.000m/s ou 140.202.906.344.000.000.000km/h aproximadamente (cálculo feito por fãs)</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Liga da Justiça sem Limites</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Qual era o nome da pessoa que assume o manto de flash no desenho Liga da Justiça Sem Limites?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>Wally West.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Vilão</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Quem é o vilão principal que confronta flash?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>Seu arqui-inimigo, Flash Reverso</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>História</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Como Barry Allen conseguiu seus poderes nos quadrinhos?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>Ele conseguiu seus poderes em seu laboratório, após ser exposto a produtos químicos e atingido por um raio.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
+    </footer>
+    <script src="app.js"></script>
+    <script>
+        // Adiciona o evento de clique para virar os cartões já existentes no HTML
+        document.querySelectorAll('.cartao').forEach(cartao => {
+            cartao.addEventListener('click', viraCartao);
+        });
+    </script>
+</body>
+</html>
